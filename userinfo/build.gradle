@@ -1,5 +1,7 @@
-plugins {
-    id 'com.android.library'
+if (isModule) {
+    apply plugin: 'com.android.application'
+} else {
+    apply plugin: 'com.android.library'
 }
 
 android {
@@ -7,6 +9,9 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
+        if (isModule.toBoolean()) {
+            applicationId "xyz.xyz0z0.userinfo"
+        }
         minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
@@ -25,6 +30,17 @@ android {
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+    }
+    sourceSets {
+        main {
+            // 独立调试与集成调试时使用不同的 AndroidManifest.xml 文件，这是独立调试，需要有 application 等信息
+            if (isModule.toBoolean()) {
+                manifest.srcFile 'src/main/moduleFile/AndroidManifest.xml'
+            } else {
+                // 这是集成调试，只需要有 activity 信息就可以
+                manifest.srcFile 'src/main/AndroidManifest.xml'
+            }
+        }
     }
 }
 
