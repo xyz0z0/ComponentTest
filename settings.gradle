@@ -1,3 +1,5 @@
 rootProject.name = "ComponentTest"
 include ':app'
 include ':userinfo'
+include ':arouter-annotations'
+include ':arouter-compiler'
