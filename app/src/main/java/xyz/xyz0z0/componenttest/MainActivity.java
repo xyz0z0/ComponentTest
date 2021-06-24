@@ -8,9 +8,15 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 import xyz.xyz0z0.arouter_annotations.ARouter;
+import xyz.xyz0z0.arouter_annotations.Parameter;
 import xyz.xyz0z0.userinfo.UserInfoActivity;
 @ARouter
 public class MainActivity extends AppCompatActivity {
+
+
+    @Parameter
+    String name2; // 序列号 String
+
 
     private Button btnToUserInfo;
 

@@ -20,9 +20,11 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.7">
-      <module name="ComponentTest.app" target="1.8" />
+      <module name="ComponentTest.app" target="11" />
       <module name="ComponentTest.arouter-compiler" target="1.8" />
-      <module name="ComponentTest.userinfo" target="1.8" />
+      <module name="ComponentTest.arouter_api" target="11" />
+      <module name="ComponentTest.common" target="11" />
+      <module name="ComponentTest.userinfo" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
