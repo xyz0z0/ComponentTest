@@ -1,6 +1,7 @@
-package xyz.xyz0z0.arouter_api;
+package xyz.xyz0z0.arouter_annotations.bean;
 
-import android.sax.Element;
+
+import javax.lang.model.element.Element;
 
 public class RouterBean {
 

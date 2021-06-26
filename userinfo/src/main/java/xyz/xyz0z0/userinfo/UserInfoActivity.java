@@ -2,8 +2,11 @@ package xyz.xyz0z0.userinfo;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+
+import xyz.xyz0z0.arouter_annotations.ARouter;
 import xyz.xyz0z0.arouter_annotations.Parameter;
 
+@ARouter(path = "/user/UserInfoActivity")
 public class UserInfoActivity extends AppCompatActivity {
 
 

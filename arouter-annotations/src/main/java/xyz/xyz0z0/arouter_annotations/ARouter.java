@@ -8,4 +8,10 @@ import java.lang.annotation.Target;
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.CLASS)
 public @interface ARouter {
+
+    // /app/MainActivity
+    String path();
+
+    String group() default "";
+
 }

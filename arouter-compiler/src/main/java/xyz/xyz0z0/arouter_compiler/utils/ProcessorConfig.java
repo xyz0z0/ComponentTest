@@ -20,6 +20,18 @@ public interface ProcessorConfig {
 
     String STRING = "java.lang.String";
     String PARAMETER_FILE_NAME = "$$Parameter";
+    String OPTIONS = "moduleName";
+    String APT_PACKAGE = "packageNameForAPT";
+
+    String AROUTER_API_GROUP = AROUTER_API_PACKAGE + ".ARouterGroup";
+    String AROUTER_API_PATH = AROUTER_API_PACKAGE + ".ARouterPath";
+
+    String PATH_METHOD_NAME = "getPathMap";
+    String GROUP_METHOD_NAME = "getGroupMap";
+    Object PATH_VAR1 = "pathMap";
+    String PATH_FILE_NAME = "ARouter$$Path$$";
+    String GROUP_FILE_NAME = "ARouter$$Group$$";
+    String GROUP_VAR1 = "groupMap";
 }
 
 

@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import xyz.xyz0z0.arouter_annotations.ARouter;
 import xyz.xyz0z0.arouter_annotations.Parameter;
 import xyz.xyz0z0.userinfo.UserInfoActivity;
-@ARouter
+@ARouter(path = "/app/MainActivity")
 public class MainActivity extends AppCompatActivity {
 
 
