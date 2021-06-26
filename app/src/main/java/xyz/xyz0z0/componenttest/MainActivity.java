@@ -9,7 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import xyz.xyz0z0.arouter_annotations.ARouter;
 import xyz.xyz0z0.arouter_annotations.Parameter;
-import xyz.xyz0z0.userinfo.UserInfoActivity;
+import xyz.xyz0z0.arouter_api.RouterManager;
+
 @ARouter(path = "/app/MainActivity")
 public class MainActivity extends AppCompatActivity {
 
@@ -30,7 +31,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 //                Intent intent = new Intent(MainActivity.this, UserInfoActivity.class);
 //                startActivity(intent);
-                goUserInfo();
+//                goUserInfo();
+
+                RouterManager.getInstance().build("/userinfo/UserInfoActivity")
+                        .navigation(MainActivity.this);
             }
         });
     }

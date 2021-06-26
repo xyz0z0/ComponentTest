@@ -6,7 +6,7 @@ import android.os.Bundle;
 import xyz.xyz0z0.arouter_annotations.ARouter;
 import xyz.xyz0z0.arouter_annotations.Parameter;
 
-@ARouter(path = "/user/UserInfoActivity")
+@ARouter(path = "/userinfo/UserInfoActivity")
 public class UserInfoActivity extends AppCompatActivity {
 
 
